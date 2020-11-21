@@ -8,7 +8,7 @@ import '../assets/styles/App.scss';
 import config from '../../config/conf';
 import useInitialState from '../hooks/useInitialState';
 
-const URI = `http://api.openweathermap.org/data/2.5/forecast?q=Cordoba&mode=json&units=metric&lang=es&appid=106dd74d9f3740246398915bdd62b5cf`;
+const URI = 'https://api.openweathermap.org/data/2.5/forecast?q=Cordoba&mode=json&units=metric&lang=es&appid=106dd74d9f3740246398915bdd62b5cf';
 
 const App = () => {
   console.log(config.API_URL);
