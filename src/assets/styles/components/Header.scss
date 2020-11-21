@@ -1,0 +1,64 @@
+.fixedHeaderContainer {
+    background: #1a2b34;
+    color: #fff;
+    min-height: 50px;
+    padding: 8px 0;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+    transform: translateZ(0);
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+.fixedHeaderContainer header .headerTitle {
+    display: block;
+    font-size: 1.25em;
+    line-height: 18px;
+    margin: 0;
+    position: relative;
+    z-index: 9999;
+}
+
+.headerTitle span {
+    font-weight: 200;
+}
+
+.fixedHeaderContainer header img {
+    height: 100%;
+    margin-right: 10px;
+}
+
+img {
+    border-style: none;
+    box-sizing: content-box;
+    max-width: 100%;
+}
+
+.headerAnccord {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    .fixedHeaderContainer {
+        flex-shrink: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+.separateOnPageNav .headerWrapper.wrapper, .separateOnPageNav .wrapper {
+    max-width: 1400px;
+}
+}
+
+@media only screen and (min-width: 1500px){
+.wrapper {
+    max-width: 1400px;
+}
+}

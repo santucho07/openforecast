@@ -1,0 +1,49 @@
+@import './Vars.scss';
+
+body {
+    margin: 0 auto;
+    font-family: $font-family;
+}
+
+* {
+    box-sizing: border-box;
+} 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 'nav nav nav nav'
+                         'search search search search'
+                         'body body body body'
+                         'footer footer footer footer';
+}
+
+.containerNav {
+    grid-area: nav;
+}
+
+.containerSearch {
+    grid-area: search;
+    background: #efefef;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+    height: 60px;
+}
+
+.containerBody {
+    grid-area: body;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.containerFooter {
+    grid-area: footer;
+    margin-top: 20px;
+}

@@ -1,1 +1,1 @@
-# openforecast
+# forecast

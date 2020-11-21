@@ -1,0 +1,32 @@
+input {
+  display: flex;
+  border-radius: 50px;
+  border: none;
+  padding: 10px;
+  width: 250px;
+  transition: width 0.3s;
+  //left: 14%;
+  position: inherit;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #ebc315;
+    transition: width 0.3s;
+    width: 300px;
+  }
+}
+h1,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  display: flex;
+  position: relative;
+  //left: -43px;
+}
+
+cs {
+    color: #6796ad;
+  font-weight: 400;
+}
